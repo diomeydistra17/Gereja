@@ -83,7 +83,7 @@ option {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url(gereja.png);
+  background-image: url(images/gereja.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -139,7 +139,7 @@ caption b {
 .tabel {
   min-height: 150vh;
   padding: 8rem 5% 1.4rem;
-  background-image: url(gereja1.jpg);
+  background-image: url(images/gereja1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
