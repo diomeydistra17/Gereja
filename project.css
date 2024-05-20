@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+body {
+  background-color: rgba(82, 82, 82, 0.644);
+  font-family: "Lora", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  position: fixed;
+  border-bottom: 2px solid #0d0d0d;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: rgba(232, 232, 232, 0.5);
+}
+.navbar img {
+  width: 6rem;
+}
+.navbar .navbar-nav a {
+  color: black;
+  font-size: 1.3rem;
+  margin: 0 2rem;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+}
+.navbar .navbar-nav a:hover {
+  color: gold;
+}
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5rem solid rgba(255, 217, 0, 0.247);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+.navbar .navbar-extra a {
+  color: black;
+  margin: 0 0.5rem;
+}
+.navbar .navbar-extra a:hover {
+  color: gold;
+}
+#humberger-menu {
+  display: none;
+}
+
+.select {
+  font-family: "lora", serif;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+}
+option {
+  color: rgb(14, 13, 13);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.super {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(gereja.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.super::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgb(0, 0, 0) 0.5%,
+    rgba(255, 255, 255, 0.168) 80%
+  );
+}
+.super .content {
+  padding: 0.5rem 10%;
+}
+.super .content h1 {
+  font-size: 3rem;
+  color: gold;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  line-height: 0.1;
+}
+.super .content p {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  line-height: 0.1;
+  color: #fff;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  margin-bottom: 2rem;
+}
+caption {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  line-height: 0;
+  color: gold;
+  margin-bottom: 0.3rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  background-size: 50%;
+  border-radius: 0.5rem;
+}
+
+caption b {
+  background-color: rgba(6, 6, 6, 0.5);
+  padding: 10px;
+  border-radius: 15px;
+}
+.tabel {
+  min-height: 150vh;
+  padding: 8rem 5% 1.4rem;
+  background-image: url(gereja1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.tabel h2 {
+  font-size: 2rem;
+  color: gold;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  line-height: 0.1;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.tabel .tabel-satu {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.tabel .tabel-satu a {
+  color: black;
+  text-decoration: none;
+  margin: 5rem 3rem;
+  font-weight: 700;
+}
+
+.marturia {
+  background-color: rgba(255, 253, 253, 0.7);
+  margin: 1rem 0rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  border: solid;
+  text-align: center;
+  color: black;
+  width: 50%;
+  position: relative;
+}
+
+.koinonia {
+  background-color: rgba(255, 253, 253, 0.7);
+  margin: 1rem 0rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  border: solid;
+  text-align: center;
+  color: black;
+  width: 50%;
+  position: relative;
+  left: 50%;
+}
+
+.diakonia {
+  background-color: rgba(255, 253, 253, 0.7);
+  margin: 1rem 0rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  border: solid;
+  text-align: center;
+  color: black;
+  width: 50%;
+  position: relative;
+}
+.organ {
+  padding: 8rem 5% 1.4rem;
+}
+
+.organ h2 {
+  font-size: 2rem;
+  color: gold;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  line-height: 0.1;
+  text-align: center;
+}
+
+.organ .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: center;
+}
+
+.organ .row .row-logo {
+  text-align: center;
+  background-color: rgba(157, 157, 156, 0.763);
+  border-radius: 5rem;
+  padding: 1rem 1rem;
+  margin: 3rem 0 0;
+}
+
+.organ .row .row-logo img {
+  width: 20%;
+}
+
+.kakr {
+  font-size: 1.5rem;
+}
+
+.kakr th {
+  background-color: rgba(255, 255, 255, 0.589);
+  border-radius: 1rem;
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+.kakr a {
+  color: black;
+  text-decoration: none;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 5% 1.4rem;
+  text-align: center;
+}
+.bar h2 {
+  font-size: 2rem;
+  color: gold;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  line-height: 0.1;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 600px;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0 0;
+}
+
+.slider {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 250px;
+  justify-items: stretch;
+  animation: slide 15s linear infinite;
+}
+
+.slider img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  to {
+    translate: calc(-4 * 250px);
+  }
+}
+
+.kontak {
+  padding: 8rem 5% 1.4rem;
+  padding-bottom: 8rem;
+  font-size: large;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabel-kontak {
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
+  margin: 1rem;
+  width: 100%;
+  border: solid;
+  border-spacing: 2;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.763);
+  padding: 1rem;
+}
+
+.kontak .kontak-satu {
+  padding-top: 0;
+  padding-bottom: 2rem;
+  margin: 1rem 2;
+}
+.kontak h2 {
+  font-size: 2rem;
+  color: gold;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  line-height: 0.1;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.par {
+  padding: 1rem 1%;
+  margin: 5rem;
+  width: 50%;
+  border: solid;
+  border-spacing: 0;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(255, 234, 0, 0.5);
+  margin-left: 25%;
+}
+
+/* footer */
+
+footer {
+  padding: 2rem 0 3rem;
+  background-color: rgb(40, 40, 40);
+  text-align: center;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: black;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #fff;
+  margin: 1rem;
+  padding: o.7rem 1rem;
+  text-decoration: none;
+}
+
+footer .credit {
+  font-size: 1rem;
+}
+
+footer .credit a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Media Quary */
+
+/*Dekstop*/
+@media (max-width: 1366px) {
+  html {
+    font-size: 90%;
+  }
+}
+/*Laptop*/
+@media (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  #humberger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: black;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: gold;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .kakr {
+    font-size: 1.3rem;
+  }
+
+  .tabel-kontak {
+    font-size: 1.2rem;
+    margin: 1rem;
+    padding: auto;
+    width: auto;
+  }
+}
+
+/*Handphone*/
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
